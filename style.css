@@ -5,7 +5,7 @@
 }
 
 .coming-soon-banner {
-    background-color: rgb(36, 170, 243);
+    background-color: #737373;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,16 +14,22 @@
     text-align: center;
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logo-container > img {
+    max-width: 80%;
+    height: auto;
+}
+
 .coming-soon-banner h1 {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 5rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.coming-soon-banner h2.logo {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 3.5rem;
-    color: white;
-    margin-bottom: 1rem;
+    margin-top: -2rem;
 }
