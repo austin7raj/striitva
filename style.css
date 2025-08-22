@@ -60,6 +60,14 @@ body {
     background-color: #555555;
     color: white;
 }
+.beta-testing {
+    text-transform: capitalize;
+}
+
+.coming-soon-banner > a {
+    text-decoration: none;
+    color: white;
+}
 
 /* Responsive styles for smartphones */
 @media (max-width: 768px) {
@@ -90,4 +98,5 @@ body {
         font-size: 0.8rem;
         padding: 0.4rem 0.8rem;
     }
+    
 }
