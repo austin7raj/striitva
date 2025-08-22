@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Query Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        form { max-width: 400px; margin: auto; }
+        label { display: block; margin-top: 15px; }
+        input, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 20px; padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h2>Submit Your Query</h2>
+    <form>
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" name="product-name" required pattern="[A-Za-z\s]+" title="Text only">
+
+        <label for="requirement">Requirement</label>
+        <input type="number" id="requirement" name="requirement" required min="1" step="1" title="Integer only">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Text only">
+
+        <label for="contact-info">Contact Info (India Phone Number)</label>
+        <input type="tel" id="contact-info" name="contact-info" required pattern="^\+91[0-9]{10}$" placeholder="+911234567890" title="Enter phone as +91 followed by 10 digits">
+
+        <button type="submit">Submit Query</button>
+    </form>
+</body>
+</html>
