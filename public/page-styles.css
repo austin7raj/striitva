@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+/* Global Styles */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -69,6 +77,25 @@ body {
     margin: 0 0.5rem;
     transition: background-color 0.3s, color 0.3s;
 }
+
+.category-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.category-card {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+    min-height: 18vh;
+    border: 1px solid #000;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
 
 @media (max-width: 600px) {
     .homepage-container {
